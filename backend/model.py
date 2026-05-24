@@ -3,15 +3,12 @@ import torch
 import re
 
 
-MODEL_PATH = "saved_summarizer_model"
+#MODEL_PATH = "saved_summarizer_model"
+MODEL_PATH = "AdityaKarande/summarize-ai-model"
 
-
-print("Loading model...")
 model = T5ForConditionalGeneration.from_pretrained(MODEL_PATH)
-print("Model loaded!")
-print("Loading tokenizer...")
+
 tokenizer = T5Tokenizer.from_pretrained(MODEL_PATH)
-print("Tokenizer loaded!")
 
 if torch.cuda.is_available():
     device = torch.device("cuda")
