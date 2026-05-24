@@ -1,0 +1,8 @@
+__pycache__/
+node_modules/
+summarizer_env/
+.env
+*.pyc
+dist/
+build/
+backend/saved_summarizer_model/
